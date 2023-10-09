@@ -4,3 +4,180 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+/* HEADER */
+.container {
+    width: 100vw;
+    height: fit-content;
+    font-size: 80%;
+    display: flex;
+}
+
+.women-men {
+    width: fit-content;
+    margin-right: 30px;
+    position: sticky;
+    top: 375px;
+    display: flex;
+}
+
+.women-menu-item, .a, .men-menu-item {
+    font-size: 300;
+    text-decoration:  none;
+    color: black;
+}
+
+.men-menu-title, .disabled {
+    color: grey;
+}
+.nav-central {
+    width: fit-content;
+    margin-right: 30px;
+}
+
+.right-menu {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    transform: translate3d(-190px, 90px, 10px);
+    align-items: center;
+    flex-direction: column;
+}
+.search-menu, .options {
+    display: flex;
+    font-size: 75%;
+}
+.p {
+    width: max-content;
+    margin-right: 10px;
+}
+.header-logo {
+    width: 10%;
+    height: 10%;
+}
+.lupa-logo {
+    width: 10%;
+    height: 10%;
+    transform:translate3d(-170px, 1px, 10px)
+}
+/* PHOTOS */
+.photos-display{
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+.photo {
+    text-align: center;
+}
+
+.first-row, .second-row, .third-row, .fourth-row, .fith-row, .sixth-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-style: groove none;
+}
+.contact__title2 {
+    font-weight: lighter;
+    padding-bottom: 15px;
+}
+
+.email {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+.phone-number {
+    color: green;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    align-items: center;
+}
+.phone-logo {
+    width: 10%;
+    height: 10%;
+}
+.contac__information {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* FOOTER */
+.footer {
+    width: 100vw;
+    height: fit-content;
+}
+.shop-guide, .services, .enterprise, .politics, .social, .paid-methods {
+    margin: 10px 0px 0px 0px;
+}
+.footer-menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo {
+    width: 7.5%;
+    height: 60%;
+}
+.social, .paid-methods, .footer-list  {
+    display: flex;
+    flex-direction: column;
+}
+.footer-list-title, .footer-list, .footer-list-item {
+    padding: 5px 0px 0px 0px;
+}
+.device-options {
+    border-top-style: groove;
+    display: flex;
+    flex-wrap: wrap;
+}
+.spain, .ios-app, .android-app, .mas-moda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left-style: groove;
+    width: 50%;
+    padding-bottom: 5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .men-menu-list {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
