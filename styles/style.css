@@ -11,13 +11,13 @@
     height: fit-content;
     font-size: 80%;
     display: flex;
+    left: 30%;
 }
 
 .women-men {
     width: fit-content;
     margin-right: 30px;
-    position: sticky;
-    top: 375px;
+    position: fixed;
     display: flex;
 }
 
@@ -33,6 +33,7 @@
 .nav-central {
     width: fit-content;
     margin-right: 30px;
+    margin-left: 40%;
 }
 
 .right-menu {
@@ -65,16 +66,17 @@
     width: 100vw;
     height: fit-content;
     padding-bottom: 50px;
+    padding-top: 60px;
 }
 .photo {
     text-align: center;
 }
 
 .first-row, .second-row, .third-row, .fourth-row, .fith-row, .sixth-row {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .bold {
     font-weight: bold;
@@ -126,26 +128,34 @@
 }
 .shop-guide, .services, .enterprise, .politics, .social, .paid-methods {
     margin: 10px 0px 0px 0px;
+    width: 50%;
 }
 .footer-menu {
     width: 90%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 5%;
 }
 .footer-logo {
     width: 7.5%;
-    height: 60%;
+    height: 80%;
+    padding-top: 10px;
 }
 .social, .paid-methods, .footer-list  {
     display: flex;
     flex-direction: column;
+}
+.social, .paid-methods {
+    width: 70%;
 }
 .footer-list-title, .footer-list, .footer-list-item {
     padding: 5px 0px 0px 0px;
 }
 .device-options {
     border-top-style: groove;
+    width: 100vw;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -164,18 +174,43 @@
         display: none;
     }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
     
 }
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px){
-    
+    .container {
+        font-size: 100%;
+    }
+    .nav-central {
+        margin-left: 25%;
+    }
+    .right-menu {
+        transform: none
+    }
+    .shop-guide, .services, .enterprise, .politics, .social, .paid-methods {
+        margin: 10px 0px 0px 0px;
+        width: 30%;
+    }
+    .footer-menu {
+        height:max-content;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px){
-    
+    .shop-guide, .services, .enterprise, .politics, .social, .paid-methods {
+        margin: 10px 0px 0px 0px;
+        width: 15%;
+    }
+    .container {
+        font-size: 110%;
+    }
+    .nav-central {
+        margin-left: 32%;
+    }
+    .spain, .ios-app, .android-app, .mas-moda {
+        width: 25%;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
